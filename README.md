@@ -13,20 +13,16 @@ Extension Firefox pour personnaliser le gestionnaire de favoris et la navigation
 - Chaînes Mosaïques ignorées pendant le zapping ; elles restent disponible dans le volet de la telecommande.
 - Thème sombre et vert, fond zen et interface réduite proportionnellement avec la fenêtre.
 
-## Installation temporaire
+## Installation 
 
-1. Téléchargez ou clonez ce dépôt.
-2. Dans Firefox, ouvrez `about:debugging#/runtime/this-firefox`.
-3. Cliquez sur **Charger un module complémentaire temporaire…** et sélectionnez `manifest.json` à la racine.
-4. Rechargez Free TV avec `Ctrl+Maj+R`.
+Addon en cours de submission Mozilla Firefox
 
-L’installation temporaire doit être renouvelée après redémarrage de Firefox. Version minimale : Firefox 140.
 
 ## Utilisation
 
 Dans le gestionnaire, un clic sur une catégorie filtre les résultats ; un second clic revient à **Toutes**. Les filtres ne modifient pas les favoris. Enregistrez avec **Valider la sélection**.
 
-Dans le lecteur, les boutons du haut parcourent toutes les chaînes ; ceux du bas parcourent les favoris. Les compteurs indiquent la position de la chaîne en cours dans chaque liste. Le lecteur Free conserve la gestion de la lecture et de ses droits d’accès.
+Dans le lecteur, les boutons chaines précentes / suivantes du haut parcourent toutes les chaînes ; ceux du bas parcourent les favoris. Les compteurs indiquent la position de la chaîne en cours dans chaque liste. Le lecteur Free conserve la gestion de la lecture et de ses droits d’accès.
 
 ## Données et ressources
 
