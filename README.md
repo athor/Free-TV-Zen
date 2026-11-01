@@ -4,13 +4,13 @@ Extension Firefox pour personnaliser le gestionnaire de favoris et la navigation
 
 ## Fonctionnalités
 
-- Volet des favoris avec numéros, logos et noms des chaînes.
-- Trois vues : standard, compacte et liste.
-- Dix filtres de catégories, appliqués aux chaînes disponibles sur le compte.
-- Sélection indépendante des numéros lorsque Free partage un favori entre des doublons reconnus.
-- Navigation précédente/suivante pour toutes les chaînes et les favoris, avec compteurs de position.
-- Mosaïques reconnues ignorées pendant le zapping ; elles restent dans la liste native.
-- Accès au gestionnaire de favoris et à l’accueil depuis le volet du lecteur.
+- Ajout du nom de la chaîne en cours 
+- Ajout de 4 boutons de Navigation chaines précédente/suivante : 2 pour pour toutes les chaînes et 2 pour vos favoris, avec compteurs de position. (ex: Chaine suivante 8/10 favoris ou 123/338 liste complète des chaines)
+- Ajout boutons Gérer ses favoris directement dans le volet favoris de telecommande du lecteur (+ un bouton "home" pour revenir à la page d'accueil de Free TV)
+- Menu de gestion des favoris a 3 vues disponible : standard (4 icones de chaine par ligne), compacte (8 icones de chaines par ligne) et liste (1 chaine par ligne).
+- Dix filtres de tri de catégories, appliqués aux chaînes disponibles sur le compte.(Généralistes / TNT, Cinéma / Séries, Sport, Jeunesse, Divertissement / Découverte, Information, Musique, Locales / Régionales, Internationales)
+- Sélection indépendante des chaînes en doublons reconnus.
+- Chaînes Mosaïques ignorées pendant le zapping ; elles restent disponible dans le volet de la telecommande.
 - Thème sombre et vert, fond zen et interface réduite proportionnellement avec la fenêtre.
 
 ## Installation temporaire
