@@ -1,0 +1,8 @@
+Mode : outil imagegen intégré (pas de CLI/API externe).
+Référence palette : 0 images/Logo Free TV ZEN dans la forêt zen.png.
+Icônes : déclinaisons mécaniques du fichier fourni, sans retouche de dessin.
+
+Consigne finale imagegen :
+Edit this landscape zen forest background to make its composition unmistakably ASYMMETRICAL while preserving its near-black forest-green photographic atmosphere and broad empty dark center for a desktop interface. Remove the mirrored framing completely. Keep one sparse graceful cluster of bamboo leaves primarily in the UPPER RIGHT corner, descending a short way along the right margin; the upper LEFT should instead have only very soft unfocused shadowy foliage, no matching leaf cluster. Keep ONE subtle small water ripple and muted reflection in the LOWER LEFT corner, slightly off the bottom edge; REMOVE the matching right-hand ripple entirely, leaving the lower right mostly dark with one faint out-of-focus green glow. Vary the height, shapes, density and brightness of the two margins, no bilateral balance or symmetry. Make the overall decoration quieter and darker than the original, with restrained muted lime accents, not bright neon; mid-60-percent remains almost empty black-green. No logo, no text, no typography, no UI, no borders or watermark. Landscape 16:9.
+
+Intégration : conversion WebP et voile sombre CSS statique, sans animation ni changement de police.

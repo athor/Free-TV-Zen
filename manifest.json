@@ -1,0 +1,54 @@
+{
+  "manifest_version": 3,
+  "name": "Free TV Zen",
+  "version": "1.4.1",
+  "description": "Catégories, volet des favoris et trois vues pour la sélection des chaînes Free TV.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "free-tv-favoris@local.invalid",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://tv.free.fr/*"
+      ],
+      "js": [
+        "channel-categories.js",
+        "content.js",
+        "player-favorites.js",
+        "player-zapping.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/free-tv-zen-16.png",
+    "32": "icons/free-tv-zen-32.png",
+    "48": "icons/free-tv-zen-48.png",
+    "96": "icons/free-tv-zen-96.png",
+    "128": "icons/free-tv-zen-128.png",
+    "256": "icons/free-tv-zen-256.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/zen-background-asymmetric-v1.webp",
+        "assets/zen-signature.svg",
+        "assets/zen-leaves.svg"
+      ],
+      "matches": [
+        "https://tv.free.fr/*"
+      ]
+    }
+  ]
+}

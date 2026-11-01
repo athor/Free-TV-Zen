@@ -1,0 +1,260 @@
+Free TV Zen — Firefox — version 1.4.0
+>
+INSTALLATION POUR ESSAI
+1. Ouvrez about:debugging#/runtime/this-firefox dans Firefox.
+2. Cliquez sur « Charger un module complémentaire temporaire ».
+3. Choisissez manifest.json dans ce dossier.
+4. Rechargez https://tv.free.fr/home/favorite_channels/edit
+>
+Vue compacte par défaut. Boutons en haut à droite : standard 4 colonnes,
+compacte 8 colonnes, liste. Toute l’interface se réduit proportionnellement sur petit écran.
+À gauche, cliquez sur une chaîne pour la retirer de la sélection.
+Enregistrez avec le bouton Free « Valider la sélection ».
+>
+La recherche Free filtre les chaînes présentes dans la page. Le volet conserve
+les favoris déjà vus ; ceux masqués par la recherche sont grisés. Effacez la
+recherche pour les retirer. Pour retrouver tous vos favoris, ouvrez la page
+sans recherche. Le compteur reflète uniquement les favoris déjà chargés.
+>
+L'installation temporaire disparaît au redémarrage de Firefox. Une installation
+permanente sur Firefox standard nécessite une signature Mozilla.
+Aucune collecte, aucun accès aux cookies, aucun envoi réseau ajouté.
+Aucune modification du HTML original ni des polices.
+Sauvegarde du HTML fourni : ../backups/Free TV.original.htm
+>
+La détection de sélection correspond aux icônes SVG de la copie fournie.
+Un changement d'interface de Free peut nécessiter une adaptation.
+
+Version 1.0.2 — règle automatique de sélection indépendante
+La liste de chaînes n'est pas fixée à 328. Les canaux présents sont comparés
+par nom normalisé et adresse exacte du logo. Ces correspondances sont des
+candidats : la règle s'active uniquement après avoir constaté qu'un clic
+modifie aussi l'état natif d'un autre numéro visible du même groupe.
+Si Free conserve des sélections indépendantes, l'extension les laisse agir.
+Les groupes de deux numéros ou plus sont pris en charge, sans liste de canaux
+codée en dur. Les choix sont mémorisés localement dans ce navigateur.
+Le choix antérieur de National Geographic 056/520 est repris lorsqu'il existe.
+La séparation concerne l'affichage de l'extension ; le lecteur Free peut
+continuer à afficher les numéros liés à son favori commun.
+Les dossiers déjà utilisés pour charger l'extension sont synchronisés avec
+la version courante pour permettre l'actualisation dans about:debugging.
+
+VERSION 1.1.0 — FAVORIS DU LECTEUR
+1. Actualisez l’extension dans about:debugging.
+2. Ouvrez une fois la page de gestion des favoris, sans recherche, pour
+   enregistrer le catalogue des groupes de doublons présents dans votre compte.
+3. Rechargez le lecteur Free TV, ouvrez la télécommande puis Favoris.
+
+Le bouton Gérer mes favoris ouvre le gestionnaire personnalisé.
+L’onglet Favoris conserve la présentation et les clics des lignes Free.
+Un seul numéro est affiché par groupe de doublons connu : celui choisi dans
+l’extension, ou le plus petit numéro si vous en avez sélectionné plusieurs.
+Toutes les chaînes reste inchangé. Les deux France 3 et TLC 960 restent séparés.
+Le filtrage suit le volet, sans dépendre du numéro dans l’adresse du lecteur.
+Les autres applications et appareils Free continuent d’utiliser les favoris
+communs enregistrés par Free : le filtrage est local à ce navigateur.
+
+Tests locaux : structure du volet reconstituée d’après le script officiel
+joint à votre copie de page. Résultat à confirmer sur votre lecteur connecté.
+
+VERSION 1.1.1 — OUVERTURE DU GESTIONNAIRE DEPUIS LE LECTEUR
+Le clic normal sur Gérer mes favoris utilise désormais les liens internes
+natifs de Free : Favoris de la grille, puis son bouton de gestion.
+Cette navigation conserve les favoris déjà chargés en mémoire et évite
+l’éditeur vide causé par un rechargement complet de l’application.
+L’affichage et le filtrage du volet Favoris du lecteur ne sont pas modifiés.
+
+VERSION 1.1.2 — RETOUR APRÈS VALIDATION
+Si vous avez ouvert le gestionnaire via le bouton du lecteur, Valider la
+sélection revient au lecteur et à la chaîne d’origine, via l’historique natif.
+Si vous êtes venu depuis la grille des chaînes ou des favoris, Free conserve
+son retour normal à la grille. Aucune première chaîne n’est lancée au hasard.
+Le clic et l’enregistrement Free restent natifs ; l’extension ajuste uniquement
+le retour après la navigation déclenchée par la validation.
+
+Bouton maison ajouté à droite des onglets de la télécommande : même hauteur et même forme que les onglets, retour vers https://tv.free.fr/home.
+
+VERSION 1.2.0 — ZAPPING DANS LES CONTRÔLES DU LECTEUR
+À gauche des contrôles langue/informations/télécommande : chaîne précédente.
+À droite : chaîne suivante. La ligne du haut utilise Toutes les chaînes ;
+la ligne du bas, repérée par une étoile, utilise les favoris sans doublons.
+Les extrémités bouclent vers la première/dernière chaîne. Si la chaîne en cours
+n’est pas dans vos favoris, la commande rejoint le favori de numéro voisin.
+Une liste vide ne change pas de chaîne ; un seul favori déjà regardé n’est
+pas relancé. Les boutons suivent le masquage automatique des contrôles Free.
+Le changement utilise le clic natif de la télécommande, sans recharger le
+lecteur ni déduire la chaîne en cours de son URL, qui peut rester inchangée.
+Aucune requête ni collecte supplémentaire ; aucun accès aux jetons de connexion.
+La mise en route attend le chargement des listes natives Free. Si elles ne
+sont pas prêtes dans le délai prévu, aucun changement aléatoire n’est effectué.
+
+VERSION 1.2.1 — CORRECTIFS ZAPPING ET AFFICHAGE
+Le zapping des favoris reconnaît la liste déjà rendue par Free, même si son
+cache SDK est périmé ou absent. Les quatre chevrons sont centrés dans leur
+cercle et leurs infobulles sont placées au-dessus des boutons.
+Le numéro et le nom de la chaîne sont affichés au-dessus des contrôles
+centraux. L’identification utilise le logo du lecteur et le catalogue natif
+déjà en cache, puis les lignes de télécommande lors d’un changement de chaîne.
+Aucune requête réseau ajoutée et aucune police modifiée.
+
+Titre de chaîne agrandi à trois fois sa taille initiale et placé entre la barre de lecture et les boutons supérieurs de zapping. Quatre infobulles locales visibles au survol ou au clavier, indépendantes du composant d’infobulle Free.
+
+Ajustements d’affichage : titre remonté de 33px, infobulles de zapping placées à gauche des quatre boutons et opaques. Les panneaux natifs audio/informations restent opaques et sont placés au-dessus du titre.
+
+Stabilisation du lecteur : le zapping fait défiler uniquement la liste interne de la télécommande, sans déplacer le lecteur ni ses conteneurs.
+
+Pendant un zapping, seul le bouton cliqué change visuellement ; les trois autres restent blancs. La protection contre les commandes simultanées reste active.
+
+Vue standard : disposition élargie, favoris décalés vers la gauche, marges réservées autour des cadres agrandis. L’écart horizontal entre deux cadres sélectionnés correspond à l’espace intérieur entre le logo et son cadre.
+
+Vue liste : espacement vertical augmenté, séparateurs centrés entre les cadres avec une marge égale de chaque côté, sans chevauchement.
+
+Cadres de sélection en vert doux #65C97A. En-tête stabilisé : recherche puis validation sur leur ligne native ; Ko-fi reste indépendant, à droite de l’ensemble élargi. Son placement est recalculé lors des changements de dimensions des commandes.
+
+Colonne des favoris élargie : noms complets sur une ligne, numéro dans une colonne avant le logo, repère « Doublon Chaîne xxxx » sur une ligne à gauche du numéro.
+
+Recherche et validation alignées en haut à droite du volet des chaînes ; Ko-fi séparé à leur droite sur la même ligne.
+
+Titre des favoris et consigne de validation alignés sur la colonne des numéros de chaîne.
+
+Colonne des numéros : largeur fixe réservée à quatre chiffres, alignement à gauche, logos et noms stables.
+
+Recherche et validation rétablies au placement natif centré sur la page, indépendamment des colonnes. Ko-fi excentré à droite, hors du bloc quand la largeur le permet. Repères de doublons retirés des favoris et conservés dans leur infobulle. Numéros alignés à gauche sur quatre chiffres.
+
+Bord droit de Valider la sélection aligné sur le bord droit du bouton de vue liste. Recherche reste immédiatement à gauche sur la même ligne. Ko-fi reste indépendant et excentré à droite.
+
+Colonne des favoris réduite de 650 à 450 px après retrait des mentions de doublons. Largeur totale du gestionnaire et boutons du haut conservés ; espace récupéré attribué au volet droit.
+
+Cadres de sélection : trait vert uni sans trait noir intérieur, coins arrondis, tiers central de chacun des quatre côtés supprimé.
+
+Vue liste : cadre vert complet, sans découpes. Les deux vues en grille conservent les cadres ouverts.
+
+Liste des favoris à gauche : fonds de lignes alternés sombre et clair, survol conservé.
+
+Survol des favoris : fond #484848 distinct des lignes alternées, priorité CSS corrigée.
+
+Survol des favoris : même vert que les cadres (#65C97A), texte sombre pour la lisibilité.
+
+Vue compacte : largeur et hauteur des cadres de sélection réduites de 10 %, centrées ; contenu et disposition inchangés.
+
+Vue compacte : cadres agrandis de 5 % par rapport à leur taille précédente, sans changement de contenu ou disposition.
+
+Colonne gauche des favoris : fond sombre #151515 et coins arrondis de 12px sur toute la hauteur.
+
+Version 1.2.2 : bandeau supérieur sombre arrondi englobant les commandes et les trois boutons de vue ; fonds sombres arrondis des deux volets alignés en haut et en bas, séparés du bandeau par 8px.
+
+Vue compacte : bandes verticales alternées #1b1b1b / #252525 alignées sur les colonnes. Vue liste : mêmes couleurs alternées horizontalement par ligne.
+
+Bandes : vue liste raccordée sans vide entre les fonds, espacement du contenu conservé. Vue compacte alignée sur la largeur réelle des colonnes, y compris avec la barre de défilement et après redimensionnement.
+
+Version 1.2.3 : adaptation aux écrans de laptop et au redimensionnement des fenêtres. Largeurs fluides, nombre de colonnes adapté à la place disponible, noms des favoris tronqués seulement si nécessaire avec nom complet dans leur infobulle. Ko-fi intégré à gauche dans le bandeau sous Édition des favoris ; cadres et survol des favoris en blanc.
+
+Vue compacte : numéro de chaîne descendu visuellement de 6px, sans déplacer les autres éléments.
+
+Vue compacte : décalage du numéro réduit à 3px vers le bas.
+
+Vue compacte : numéro abaissé de 4px au total.
+
+Vue compacte : numéro abaissé de 5px au total.
+
+Vue compacte : numéro remonté de 1px, décalage total vers le bas de 4px.
+
+Vue compacte : réglage fin du décalage du numéro à 4,5px CSS.
+
+Vue compacte : nom de la chaîne remonté visuellement de 10px, sans déplacer le reste.
+
+Vue compacte : nom redescendu de 2px, décalage final de -8px.
+
+Vue compacte : déplacements du nom annulés, retour à la position d’origine. Réglage du numéro conservé.
+
+Vue compacte : noms remontés de 3px par rapport à la position d’origine.
+
+Vue compacte : noms redescendus de 1px, décalage final de -2px.
+
+Vue compacte : noms remontés de 0,5px, décalage final de -2,5px.
+
+Bloc Ko-fi : légende centrée sur le bouton, bord gauche aligné sur le M de Mes chaînes sélectionnées aux différentes largeurs de fenêtre. Compteur des chaînes centré verticalement avec les trois boutons de vue.
+
+Largeur totale des trois boutons de vue égale à celle de Valider la sélection, espacements répartis. Hauteur du champ de recherche égale à celle du bouton Valider ; icônes centrées. Dimensions suivies automatiquement.
+
+Commandes supérieures : Recherche/Valider et compteur/vues décalés ensemble pour aligner leur bord droit sur les bandes de chaînes, en tenant compte de la marge et de la barre de défilement.
+
+Cadres de sélection et survol des favoris : vert #CCF97C. Texte sombre conservé au survol.
+
+Vue compacte : ouvertures des côtés gauche et droit du cadre centrées sur la première ligne du nom de chaîne ; longueur des ouvertures conservée, côtés haut et bas inchangés.
+
+Vue compacte : fond sombre arrondi restauré sous les bandes, y compris dans les marges du volet.
+
+Trait vertical séparant les favoris des chaînes supprimé ; espacement des deux volets conservé.
+
+Vue compacte : séparateurs horizontaux raccordés et limités exactement aux bords extérieurs des bandes alternées, quel que soit le nombre de colonnes.
+
+Vue liste : contenu descendu de 12px pour aligner le haut du premier bandeau sur celui des bandes compactes ; fond du volet inchangé.
+
+Bandes compactes : limites calculées depuis les positions réelles des colonnes, bandes égales et centrées sur les cadres, frontières au milieu des cadres voisins. Demi-espaces extérieurs conservés.
+Fond sombre du volet droit élargi latéralement dans les trois vues, sans déplacer le contenu ou les commandes.
+
+Bandeau supérieur réduit de 36px en compactant uniquement les espaces verticaux, taille des boutons conservée.
+
+Version 1.2.4 : réduction proportionnelle de toute l’interface du gestionnaire quand la fenêtre devient plus étroite. Disposition, alignements, espacements et nombres de colonnes conservés (4 / 8 / 1). Les seuils de réorganisation du gestionnaire sont supprimés. La hauteur de la zone défilante reste adaptée à la fenêtre. Police inchangée.
+
+Vue standard : ouvertures des côtés gauche et droit du cadre centrées verticalement sur l’icône de chaîne. Longueur des ouvertures et découpes haut/bas conservées.
+
+Vue compacte : cadres réduits de 10 % en largeur uniquement ; hauteur et largeur absolue des ouvertures haut/bas conservées.
+
+Défilement du volet droit : départ abaissé au niveau supérieur des bandes compacte/liste, fond sombre complet conservé avec coin supérieur droit arrondi dans les trois vues.
+
+Espacements des fonds : 13px sous le bandeau supérieur et 13px entre favoris et chaînes ; fond droit élargi vers la gauche sans déplacer son contenu.
+
+Ajustement fin : écart supérieur réduit de 0,5px CSS (12,5px), écart horizontal conservé.
+
+Bord droit du fond des chaînes aligné sur le bandeau supérieur : zone droite réduite de 14px et contenu redistribué vers la gauche dans les trois vues ; commandes conservées alignées sur les bandes.
+
+Commandes en haut à droite : Recherche/Valider et compteur/vues alignés sur le bord droit de la barre de défilement verticale, dans les trois vues.
+
+Blocs de chaînes recentrés dans le fond sombre dans les trois vues ; largeur du contenu, disposition interne, commandes et bord droit de la barre de défilement conservés.
+
+Centrage des blocs de chaînes : entre le bord gauche du fond sombre et le bord gauche de la barre de défilement. Barre, largeur des cartes et disposition interne conservées.
+
+Ko-fi dans la ligne supérieure, à gauche de Recherche ; légende Vous aimez cet addon ? à gauche du bouton Ko-fi, alignement vertical centré.
+
+Hauteur du bandeau : 16px entre le bas de Valider et le haut des boutons de vue, comme entre Recherche et Valider.
+
+VERSION 1.3.0 — CATÉGORIES
+10 boutons de même largeur : Toutes, Généralistes / TNT, Cinéma / Séries,
+Sport, Jeunesse, Divertissement / Découverte, Information, Musique,
+Locales / Régionales, Internationales.
+Un clic filtre le volet droit ; recliquer la catégorie active revient à Toutes.
+Le filtre ne change jamais les favoris sélectionnés. Le compteur indique
+les chaînes affichées. La recherche Free et les trois vues restent utilisables.
+Les rangées sont séparées par 13px CSS, comme les deux fonds du bas.
+Les boutons et leurs écarts se réduisent avec toute l’interface.
+Le classement traite les chaînes réellement chargées sur chaque compte,
+y compris les abonnements payants, et ne dépend pas de la liste de 328 chaînes.
+Base thématique : plan officiel Free du 25 août 2026, avec reconnaissance
+des raccourcis premium par numéro et par nom commun avec leur canal thématique.
+Référence : https://portail.free.fr/media/001_Dossier_integral_549879dbda.pdf
+Une chaîne hors des neuf thèmes ou non reconnue reste toujours accessible
+dans Toutes. Généralistes / TNT contient toute la TNT, même lorsqu’une chaîne
+apparaît aussi dans un autre thème. Aucune requête réseau supplémentaire.
+
+Ligne des catégories : largeur maximale native Free supprimée pour occuper exactement la largeur du bandeau supérieur ; dix boutons égaux conservés.
+
+Vue compacte : chaque ligne contenant au moins une chaîne affiche un séparateur sur toute la largeur des colonnes, y compris la dernière ligne incomplète et les résultats filtrés.
+
+Catégories : dix boutons de même largeur dans un fond sombre arrondi, bord gauche des boutons aligné sur les lignes des favoris et bord droit sur Valider. Écarts de 13px entre les fonds conservés.
+
+Coins des bandes : vue compacte arrondie aux quatre coins extérieurs du tableau, jusqu’à la fin réelle des chaînes ; vue liste arrondie en haut de la première ligne et en bas de la dernière. Repères recalculés après filtrage, y compris pour une seule ligne.
+
+Vue compacte : marge supérieure de 9px avant la première rangée, équivalente à un demi-interligne. Fond des bandes prolongé de la même valeur, scrollbar et dimensions des cadres conservées.
+
+VERSION 1.4.0 — ICÔNE ET DÉCOR ZEN
+Icône issue de l’image fournie, déclinée en PNG 16/32/48/96/128/256px.
+Image originale conservée sans changement dans le dossier 0 images du projet.
+Fond forestier asymétrique : bambou en haut à droite, reflets en bas à gauche,
+centre sombre et voile discret. Affichage uniquement dans le gestionnaire.
+Ressources locales, fond statique en WebP (environ 32Ko), aucune animation,
+aucune requête vers un serveur d’images, aucune modification de police.
+Consigne et méthode : assets/zen-background-prompt.txt.
+
+Version 1.4.1 : signature végétale ZEN vectorielle transparente dans le bandeau, bouton Ko-fi aux couleurs sombres et vertes du thème.
