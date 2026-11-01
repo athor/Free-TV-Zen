@@ -45,3 +45,14 @@ Les sauvegardes de développement et les copies de pages personnelles ne sont pa
 ## Support
 
 [Support me on Ko-fi](https://ko-fi.com/T0J72545CL)
+
+<img width="1254" height="1254" alt="Logo Free TV ZEN dans la forêt zen" src="https://github.com/user-attachments/assets/d3798e8a-4204-4c5d-a799-f91004ae7224" />
+<img width="3840" height="1911" alt="6 Fav3" src="https://github.com/user-attachments/assets/02e59db1-aca4-4ccd-a144-6b18847577d3" />
+<img width="3840" height="1911" alt="5 Fav2" src="https://github.com/user-attachments/assets/bb5e75df-0221-48e5-b13e-1ec6f5e065ea" />
+<img width="3840" height="1911" alt="4 Fav1" src="https://github.com/user-attachments/assets/cedeb8be-6cba-44df-ad07-84e062989e46" />
+<img width="3840" height="1911" alt="3 lecteur" src="https://github.com/user-attachments/assets/bf4afda5-6e42-474a-958b-feb9bc8737c3" />
+<img width="3840" height="1911" alt="2 lecteur" src="https://github.com/user-attachments/assets/aa9dd3f2-b4f8-4563-a596-20769131a5c3" />
+<img width="3840" height="1911" alt="1 lecteur" src="https://github.com/user-attachments/assets/128140be-6b76-49a0-b043-99a114d3a755" />
+
+
+
