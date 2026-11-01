@@ -49,6 +49,7 @@ Les sauvegardes de développement et les copies de pages personnelles ne sont pa
   </a>
 </p>
 
+<p align="center">
 <a href="https://github.com/user-attachments/assets/02e59db1-aca4-4ccd-a144-6b18847577d3">
   <img width="300" alt="6 Fav3" src="https://github.com/user-attachments/assets/02e59db1-aca4-4ccd-a144-6b18847577d3" />
 </a>
@@ -67,5 +68,5 @@ Les sauvegardes de développement et les copies de pages personnelles ne sont pa
 <a href="https://github.com/user-attachments/assets/128140be-6b76-49a0-b043-99a114d3a755">
   <img width="300" alt="1 lecteur" src="https://github.com/user-attachments/assets/128140be-6b76-49a0-b043-99a114d3a755" />
 </a>
-
+</p>
 
