@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Free TV Zen",
-  "version": "1.4.2",
+  "version": "1.4.9",
   "description": "Catégories, volet des favoris et trois vues pour la sélection des chaînes Free TV.",
   "browser_specific_settings": {
     "gecko": {

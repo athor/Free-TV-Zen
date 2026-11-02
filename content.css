@@ -298,3 +298,10 @@ html.bft-zap-scanning .ZapListModal, html.bft-zap-scanning .ZapListModalBackgrou
 
 /* One actual rounded backdrop avoids inner corner artifacts from overlapping shadows. */
 .bft-parent::after { width: calc(100% + 51px); margin-left: -51px; box-shadow: -.5px 0 0 #CCF97C; }
+
+/* Preserve the exact number when Free selects its shared service alias. */
+.ZapListChannelRowContainer[data-bft-zap-selected] { background-color: #505050; }
+.ZapListChannelRowContainer[data-bft-zap-alias] { background-color: transparent; }
+
+/* Visual click feedback only: every zap control remains interactive. */
+.PlayerButton.bft-zap-button.bft-zap-active { opacity: .65; }
