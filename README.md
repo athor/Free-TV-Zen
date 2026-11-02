@@ -1,6 +1,32 @@
-# Free TV Zen
-
+# Free TV Zen — Une meilleure expérience Free TV
 Extension Firefox pour personnaliser le gestionnaire de favoris et la navigation du lecteur sur [Free TV](https://tv.free.fr).
+
+**Naviguez facilement entre vos chaînes et vos favoris, gérez vos préférences en quelques clics et profitez d'une interface sombre au thème zen.**
+
+## Fonctionnalités principales
+
+### 📺 Navigation entre les chaînes
+- **Chaîne en cours :** affichage du nom de la chaîne actuellement regardée.
+- **Zapping classique :** deux boutons « Chaîne précédente » et « Chaîne suivante » pour naviguer dans la liste complète des chaînes.
+- **Zapping des favoris :** deux boutons dédiés pour passer directement d'une chaîne favorite à une autre.
+
+### ⭐ Gestion simplifiée des favoris
+- **Menu des favoris :** accès rapide à toutes vos chaînes favorites.
+- **Tri rapide :** boutons permettant de réorganiser facilement la liste.
+- **3 modes d'affichage :** choisissez la présentation qui vous convient.
+- **Gestion directe :** bouton « Gérer les favoris » intégré au menu des favoris de la télécommande.
+
+### 🎮 Télécommande améliorée
+- **Bouton Accueil :** retour direct à l'accueil de Free TV depuis le volet de la télécommande.
+- **Zapping intelligent :** les boutons « Chaîne précédente » et « Chaîne suivante » ignorent automatiquement les chaînes mosaïques et les chaînes 4K non prises en charge.
+
+## Corrections et améliorations
+
+- **Correction des doublons dans les favoris :** lorsqu'une chaîne possède plusieurs versions identiques, seule la version sélectionnée est ajoutée aux favoris, évitant ainsi l'ajout involontaire de deux chaînes.
+
+---
+
+**Free TV Zen : moins de manipulations, plus de confort et une navigation plus fluide dans Free TV.**
 
 ## Fonctionnalités
 
@@ -19,10 +45,17 @@ Addon en cours de submission Mozilla Firefox
 
 
 ## Utilisation
+**📺 Navigation dans le lecteur**
 
-Dans le gestionnaire, un clic sur une catégorie filtre les résultats ; un second clic revient à **Toutes**. Les filtres ne modifient pas les favoris. Enregistrez avec **Valider la sélection**.
+- **Boutons du haut :** passez à la chaîne précédente ou suivante parmi toutes les chaînes.
+- **Boutons du bas :** naviguez uniquement entre vos chaînes favorites.
+- **Compteurs :** visualisez la position de la chaîne en cours dans chacune des deux listes.
 
-Dans le lecteur, les boutons chaines précentes / suivantes du haut parcourent toutes les chaînes ; ceux du bas parcourent les favoris. Les compteurs indiquent la position de la chaîne en cours dans chaque liste. Le lecteur Free conserve la gestion de la lecture et de ses droits d’accès.
+**⭐ Gestion de vos favoris**
+
+- **Sélectionnez vos chaînes favorites** à l'aide de leur bouton de sélection. Elles apparaissent automatiquement dans la colonne de gauche.
+- **Trouvez facilement vos chaînes** grâce à la recherche, aux catégories et aux 3 modes d'affichage.
+- **Enregistrez vos modifications** en cliquant sur « Valider la sélection ».
 
 ## Données et ressources
 
