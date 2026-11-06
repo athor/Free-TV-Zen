@@ -40,9 +40,7 @@ Extension Firefox pour personnaliser le gestionnaire de favoris et la navigation
 - Thème sombre et vert, fond zen et interface réduite proportionnellement avec la fenêtre.
 
 ## Installation 
-
-Addon en cours de submission Mozilla Firefox
-
+https://addons.mozilla.org/fr/firefox/addon/free-tv-zen/
 
 ## Utilisation
 **📺 Navigation dans le lecteur**
